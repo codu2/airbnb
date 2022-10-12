@@ -1,0 +1,25 @@
+import Image from "next/image";
+import React from "react";
+
+function Banner() {
+  return (
+    <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
+      <Image
+        src="https://links.papareact.com/0fm"
+        alt=""
+        layout="fill"
+        objectFit="cover"
+      />
+      <div className="absolute top-1/2 w-full text-center">
+        <p className="text-sm sm:text-lg font-semibold">
+          수백만 개의 다양한 숙소를 만나보세요
+        </p>
+        <button className="text-sm bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">
+          여행지 검색
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default Banner;
